@@ -1,0 +1,30 @@
+Database Structure for Content Management ->
+
+
+1. users
+	- id			int
+	- name			varchar(100)
+	- email			varchar(100)
+	- password		varchar(255)
+	- image			varchar(150)
+
+
+2. blogs
+	- id			int
+	- title			varchar(255)
+	- author		varchar(100)
+	- updated_timestamp	datetime
+	- content		MEDIUMTEXT
+	- category		varchar(100)
+	- user_id		int
+
+3. likes
+	- blog_id		int
+	- user_id		int
+
+4. comments
+	- id			int
+	- comment		varchar(255)
+	- blog_id		int
+	- user_id		int	
+

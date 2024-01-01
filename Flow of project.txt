@@ -1,0 +1,62 @@
+Content Management Website ->
+
+
+1. Home
+	Nav Bar -
+		1. Homepage
+		2. Dashboard
+		3. Notifications
+		4. Profile
+
+2. Login And Register / Logout
+3. Dashboard of user
+	1. Create Blog
+	2. Edit Blog
+	3. Read Blog (Pagination) 
+
+4. Blog Page
+	1. Template of blog
+	2. Name of the Blog
+	3. Author of the blog
+	4. Timing of blog
+	5. keywords for blog
+	6. Content of blog
+	7. Like options
+	8. Comments of blog
+	9. Share options
+	10. Other blogs related to same
+	 
+5. Profile
+
+	1. Profile Picture
+	2. Name
+	3. email id
+	4. change password
+	5. Blogs Created
+
+
+
+				Goals									Time Required
+
+1.	Create Home Page, Login and Register in front end 						2 DAYS						
+	Create Java Project (Code First approach)
+	Database Structure
+
+2. 	Create Dashboard of user frontend and backend							1 DAYS
+
+3.	Create Blogs page backend and frontend								2/3 DAYS
+
+4.	Create Profile, showing notifications in front end and backend					2 DAYS
+
+
+
+
+
+
+
+
+
+
+
+
+
