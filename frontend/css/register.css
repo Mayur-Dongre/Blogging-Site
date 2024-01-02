@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/background.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.regsiter-card{
+    border: 2px solid white;
+    border-radius: 2rem;
+    padding: 2rem;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(.4rem);
+    box-shadow: 4px 4px 8px rgb(27, 227, 204);
+}
+
+.regsiter-card h1{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(27, 227, 204);
+}
+
+.regsiter-card .fa,
+.regsiter-card .fa-solid{
+    color: white;
+}
+
+.regsiter-card .box .input-box{
+    width: 100%;
+    height: 40px;
+    padding-left: 1rem;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.regsiter-card .box{
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.regsiter-card .box .icon-eye{
+    cursor: pointer;
+}
+
+.regsiter-card .register-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.regsiter-card .register-btn .btn{
+    width: 60%;
+    transition: .2s;
+}
+
+.regsiter-card .register-btn .btn:hover{
+    transform: scale(0.9);
+}
+
+.regsiter-card .login-link{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.regsiter-card .login-link a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid rgb(27, 227, 204);
+    transition: .2s;
+}
+
+.regsiter-card .login-link a:hover{
+    transform: scale(1.1);
+    text-shadow: 2px 2px 4px rgb(27, 227, 204);
+}
+
+#eye3{
+    display: none;
+}
+
+#toast {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 0.5rem;
+    
+}
