@@ -5,96 +5,117 @@ body{
     height: 100vh;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.regsiter-card{
+.register-card{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(0.4rem);
     border: 2px solid white;
     border-radius: 2rem;
     padding: 2rem;
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(.4rem);
-    box-shadow: 4px 4px 8px rgb(27, 227, 204);
+    box-shadow: 0.4rem 0.4rem 0.8rem rgb(27, 227, 204);
 }
 
-.regsiter-card h1{
+.register-card h1{
     text-align: center;
     color: white;
-    text-shadow: 2px 2px 4px rgb(27, 227, 204);
+    text-shadow: 0.2rem 0.2rem 0.4rem rgb(27, 227, 204);
+    margin-bottom: 2rem;
 }
 
-.regsiter-card .fa,
-.regsiter-card .fa-solid{
+.register-card .box i{
     color: white;
 }
 
-.regsiter-card .box .input-box{
+.register-card .box .input-box{
     width: 100%;
-    height: 40px;
+    height: 2.5rem;
     padding-left: 1rem;
     outline: none;
     border: none;
     background: transparent;
-    color: #fff;
+    color: white;
     font-size: 1.3rem;
     font-weight: 600;
 }
 
-.regsiter-card .box{
-    width: 100%;
-    border-bottom: 1px solid #fff;
-    margin-bottom: 1.5rem;
-    display: flex;
-    align-items: center;
-}
-
-::placeholder{
+.register-card .box .input-box::placeholder{
     color: rgba(255, 255, 255, 0.5);
 }
 
-.regsiter-card .box .icon-eye{
+.register-card .box{
+    width: 100%;
+    display: flex;
+    margin-top: 1.5rem;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+#eye2,#eye4{
+    display: none;
+}
+
+.register-card .box .icon-eye{
     cursor: pointer;
 }
 
-.regsiter-card .register-btn{
+.register-card .check input{
+    transform: scale(1.2);
+    margin-right: 0.5rem;
+}
+
+.register-card .check input:checked{
+    accent-color: black;
+}
+
+.register-card .check span{
+    color: white;
+    font-weight: 600;
+}
+
+.register-card .register-btn{
     display: flex;
     justify-content: center;
     margin-top: 2rem;
 }
 
-.regsiter-card .register-btn .btn{
+.register-card .register-btn .btn{
     width: 60%;
-    transition: .2s;
+    transition: 0.3s;
 }
 
-.regsiter-card .register-btn .btn:hover{
+.register-card .register-btn .btn:hover{
     transform: scale(0.9);
 }
 
-.regsiter-card .login-link{
+.register-card .login-link{
     display: flex;
     justify-content: center;
     margin-top: 1rem;
 }
 
-.regsiter-card .login-link a{
+.register-card .login-link a{
     color: white;
     font-weight: 600;
     text-decoration: none;
-    border-bottom: 2px solid rgb(27, 227, 204);
-    transition: .2s;
+    border-bottom: 0.1rem solid rgb(27, 227, 204);
+    transition: 0.3s;
+    cursor: pointer;
 }
 
-.regsiter-card .login-link a:hover{
+.register-card .login-link a:hover{
     transform: scale(1.1);
-    text-shadow: 2px 2px 4px rgb(27, 227, 204);
+    text-shadow: 0.2rem 0.2rem 0.4rem rgb(27, 227, 204);
+    color: white;
 }
 
-#eye3{
-    display: none;
-}
+
+
+
 
 #toast {
     position: fixed;
@@ -104,5 +125,45 @@ body{
     background-color: #4CAF50;
     color: white;
     border-radius: 0.5rem;
-    
+    display: none;
+}
+
+.show {
+    display: block;
+    animation: fadeInOut 3s ease-out;
+}
+  
+@keyframes fadeInOut {
+    0%, 100% {
+    opacity: 0;
+    }
+    25%, 75% {
+    opacity: 1;
+    }
+}
+
+
+.register-card .password-error{
+    color: rgb(255, 0, 0);
+    background: rgba(255, 255, 255, 0.5);
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+.valid {
+    color: green;
+}
+  
+.valid:before {
+    left: -35px;
+    content: "✔";
+}
+
+.invalid {
+    color: red; 
+}
+
+.invalid:before {
+    left: -35px;
+    content: "✖";
 }
